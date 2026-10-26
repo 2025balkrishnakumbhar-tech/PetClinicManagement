@@ -117,42 +117,42 @@ export interface SQLLogEntry {
   status: 'SUCCESS' | 'ERROR';
 }
 
-// Initial Seed Data
+// Initial Seed Data (Indian Context)
 const INITIAL_OWNERS: Owner[] = [
-  { owner_id: 101, first_name: 'Elena', last_name: 'Vance', phone: '+1 (555) 438-9201', email: 'elena.vance@blackmesa.net', address: '404 Cyberway Blvd, Sector 7', city: 'Neo-Veridia', created_at: '2026-01-14' },
-  { owner_id: 102, first_name: 'Marcus', last_name: 'Chen', phone: '+1 (555) 872-3104', email: 'm.chen@synthetix.io', address: '128 NeuroLink Ave, Suite 4B', city: 'Neo-Veridia', created_at: '2026-01-22' },
-  { owner_id: 103, first_name: 'Aria', last_name: 'T\'Soni', phone: '+1 (555) 901-7764', email: 'aria.tsoni@illum.org', address: '77 Nebula Terrace', city: 'Aetheria Prime', created_at: '2026-02-05' },
-  { owner_id: 104, first_name: 'Kaelen', last_name: 'Reyes', phone: '+1 (555) 234-8899', email: 'kael.reyes@titan-labs.com', address: '992 Sub-Level 3 Grid', city: 'Neo-Veridia', created_at: '2026-02-18' },
-  { owner_id: 105, first_name: 'Seraphina', last_name: 'Kowalski', phone: '+1 (555) 612-4411', email: 'skowalski@quantumvec.net', address: '15 Helix Spire', city: 'New Coruscant', created_at: '2026-03-01' }
+  { owner_id: 101, first_name: 'Rajesh', last_name: 'Sharma', phone: '+91 98201 44521', email: 'rajesh.sharma@gmail.com', address: 'Flat 402, Sea Breeze Apts, Bandra West', city: 'Mumbai, Maharashtra', created_at: '2026-01-14' },
+  { owner_id: 102, first_name: 'Priya', last_name: 'Patel', phone: '+91 98450 12389', email: 'priya.patel@synthetix.in', address: 'Villa 12, Indiranagar 100ft Road', city: 'Bengaluru, Karnataka', created_at: '2026-01-22' },
+  { owner_id: 103, first_name: 'Aarav', last_name: 'Deshmukh', phone: '+91 99234 88761', email: 'aarav.deshmukh@tcs.com', address: 'Plot 88, Lane 5, Koregaon Park North', city: 'Pune, Maharashtra', created_at: '2026-02-05' },
+  { owner_id: 104, first_name: 'Ananya', last_name: 'Iyer', phone: '+91 97110 56742', email: 'ananya.iyer@titan-labs.in', address: 'B-304, Cyber Spire, Connaught Place', city: 'New Delhi', created_at: '2026-02-18' },
+  { owner_id: 105, first_name: 'Vikram', last_name: 'Malhotra', phone: '+91 98840 99120', email: 'vikram.malhotra@quantumvec.in', address: 'Row House 7, Road No. 36, Jubilee Hills', city: 'Hyderabad, Telangana', created_at: '2026-03-01' }
 ];
 
 const INITIAL_PETS: Pet[] = [
-  { pet_id: 201, name: 'Cerberus', species: 'Canine', breed: 'Cyber-Doberman', date_of_birth: '2023-04-12', owner_id: 101, microchip_no: 'CHIP-982-AX9', weight_kg: 34.2, gender: 'Male', neutered: true, status: 'Healthy' },
-  { pet_id: 202, name: 'Nyx', species: 'Feline', breed: 'Quantum-Bengal', date_of_birth: '2024-01-19', owner_id: 102, microchip_no: 'CHIP-412-FX2', weight_kg: 4.8, gender: 'Female', neutered: true, status: 'In Treatment' },
-  { pet_id: 203, name: 'Phoenix', species: 'Avian', breed: 'Holo-Falcon', date_of_birth: '2022-11-04', owner_id: 103, microchip_no: 'CHIP-733-AV8', weight_kg: 1.4, gender: 'Male', neutered: false, status: 'Healthy' },
-  { pet_id: 204, name: 'Gorgon', species: 'Reptile', breed: 'Nano-Chameleon', date_of_birth: '2023-08-30', owner_id: 104, microchip_no: 'CHIP-219-RP5', weight_kg: 0.9, gender: 'Female', neutered: false, status: 'Post-Op' },
-  { pet_id: 205, name: 'Volt', species: 'Canine', breed: 'Bio-Shepherd', date_of_birth: '2021-06-15', owner_id: 105, microchip_no: 'CHIP-664-CN3', weight_kg: 28.5, gender: 'Male', neutered: true, status: 'Critical' },
-  { pet_id: 206, name: 'Suki', species: 'Feline', breed: 'Siam-Android', date_of_birth: '2024-09-02', owner_id: 101, microchip_no: 'CHIP-891-FX7', weight_kg: 3.9, gender: 'Female', neutered: true, status: 'Healthy' }
+  { pet_id: 201, name: 'Sheru', species: 'Canine', breed: 'Desi Indie Hound (Cyber-Augmented)', date_of_birth: '2023-04-12', owner_id: 101, microchip_no: 'CHIP-IN-982-MH', weight_kg: 24.5, gender: 'Male', neutered: true, status: 'Healthy' },
+  { pet_id: 202, name: 'Simba', species: 'Canine', breed: 'Golden Retriever (Nano-Cardio)', date_of_birth: '2022-08-15', owner_id: 102, microchip_no: 'CHIP-IN-412-KA', weight_kg: 31.8, gender: 'Male', neutered: true, status: 'In Treatment' },
+  { pet_id: 203, name: 'Mithu', species: 'Avian', breed: 'Indian Ringneck (Holo-Feather)', date_of_birth: '2023-02-10', owner_id: 103, microchip_no: 'CHIP-IN-733-PN', weight_kg: 0.35, gender: 'Male', neutered: false, status: 'Healthy' },
+  { pet_id: 204, name: 'Rani', species: 'Feline', breed: 'Indian Calico (Optical Sensor V2)', date_of_birth: '2024-01-19', owner_id: 104, microchip_no: 'CHIP-IN-219-DL', weight_kg: 4.2, gender: 'Female', neutered: true, status: 'Post-Op' },
+  { pet_id: 205, name: 'Bruno', species: 'Canine', breed: 'Mudhol Hound (Bio-Sensor)', date_of_birth: '2021-06-15', owner_id: 105, microchip_no: 'CHIP-IN-664-HYD', weight_kg: 27.0, gender: 'Male', neutered: true, status: 'Critical' },
+  { pet_id: 206, name: 'Bella', species: 'Feline', breed: 'Persian Longhair (Cyber-Implant)', date_of_birth: '2024-09-02', owner_id: 101, microchip_no: 'CHIP-IN-891-MH', weight_kg: 3.8, gender: 'Female', neutered: true, status: 'Healthy' }
 ];
 
 const INITIAL_VETS: Veterinarian[] = [
-  { vet_id: 301, name: 'Dr. Aris Thorne, DVM', specialization: 'Cyber-Surgical & Ortho Reconstruct', license_no: 'VET-LIC-8842', phone: '+1 (555) 789-0112', shift: 'Morning 08:00 - 16:00', status: 'On Duty', room_no: 'OR-Alpha 1' },
-  { vet_id: 302, name: 'Dr. Vespera Lin, PhD, DVM', specialization: 'Neural-Implants & Neuro-Diagnostics', license_no: 'VET-LIC-9411', phone: '+1 (555) 789-0115', shift: 'Afternoon 14:00 - 22:00', status: 'In Surgery', room_no: 'Neuro-Lab 3' },
-  { vet_id: 303, name: 'Dr. Thaddeus Drake, DVM', specialization: 'Avian & Exotic Nanobiotic Care', license_no: 'VET-LIC-7320', phone: '+1 (555) 789-0119', shift: 'Night Surveillance 22:00 - 06:00', status: 'On Duty', room_no: 'Exotic Pod 2' },
-  { vet_id: 304, name: 'Dr. Maya Sterling, DVM', specialization: 'Critical Care & Bio-Cardiology', license_no: 'VET-LIC-6504', phone: '+1 (555) 789-0122', shift: 'Morning 08:00 - 16:00', status: 'Off Duty', room_no: 'ICU Unit 4' }
+  { vet_id: 301, name: 'Dr. Arvind Swaminathan, BVSc & AH, MVSc', specialization: 'Cyber-Surgical & Orthopedic Reconstruction', license_no: 'VCI-MH-2016-8421', phone: '+91 (022) 2640-0112', shift: 'Morning 08:30 - 16:30', status: 'On Duty', room_no: 'OT-Alpha 1 (Bandra)' },
+  { vet_id: 302, name: 'Dr. Meera Nambiar, BVSc, PhD', specialization: 'Neural-Implants & Neuro-Diagnostics', license_no: 'VCI-KA-2018-9411', phone: '+91 (080) 4120-0115', shift: 'Afternoon 14:00 - 22:00', status: 'In Surgery', room_no: 'Neuro-Lab 2 (Indiranagar)' },
+  { vet_id: 303, name: 'Dr. Rohan Joshi, MVSc', specialization: 'Avian & Exotic Nanobiotic Care', license_no: 'VCI-MH-2020-7320', phone: '+91 (020) 2560-0119', shift: 'Night Surveillance 22:00 - 06:00', status: 'On Duty', room_no: 'Exotic Pod 3 (Koregaon)' },
+  { vet_id: 304, name: 'Dr. Kavita Reddy, BVSc & AH, MVSc', specialization: 'Critical Care & Bio-Cardiology', license_no: 'VCI-TS-2015-6504', phone: '+91 (040) 2350-0122', shift: 'Morning 08:30 - 16:30', status: 'Off Duty', room_no: 'ICU Bay 4 (Jubilee Hills)' }
 ];
 
 const INITIAL_APPOINTMENTS: Appointment[] = [
-  { appointment_id: 401, pet_id: 201, vet_id: 301, appointment_date: '2026-10-27 09:30', reason: 'Annual titanium joint calibration & neural check', priority: 'Routine', status: 'Scheduled' },
-  { appointment_id: 402, pet_id: 202, vet_id: 302, appointment_date: '2026-10-26 11:00', reason: 'Retinal optics flicker and optical sensory lag', priority: 'Urgent', status: 'In Progress' },
-  { appointment_id: 403, pet_id: 204, vet_id: 303, appointment_date: '2026-10-25 15:45', reason: 'Post-op nanogel skin dermal regeneration check', priority: 'Routine', status: 'Completed' },
-  { appointment_id: 404, pet_id: 205, vet_id: 304, appointment_date: '2026-10-26 14:15', reason: 'Cardiac arrhythmia & bio-pump pressure drop', priority: 'Emergency', status: 'Scheduled' }
+  { appointment_id: 401, pet_id: 201, vet_id: 301, appointment_date: '2026-10-27 10:30', reason: 'Annual titanium joint calibration & monsoon skin check', priority: 'Routine', status: 'Scheduled' },
+  { appointment_id: 402, pet_id: 202, vet_id: 304, appointment_date: '2026-10-26 11:30', reason: 'Bio-cardio pump rhythm flutter & heat fatigue', priority: 'Urgent', status: 'In Progress' },
+  { appointment_id: 403, pet_id: 203, vet_id: 303, appointment_date: '2026-10-25 16:00', reason: 'Beak alignment & wing nano-feather static check', priority: 'Routine', status: 'Completed' },
+  { appointment_id: 404, pet_id: 205, vet_id: 301, appointment_date: '2026-10-26 14:45', reason: 'Emergency arterial stent pressure drop', priority: 'Emergency', status: 'Scheduled' }
 ];
 
 const INITIAL_TREATMENTS: TreatmentRecord[] = [
-  { treatment_id: 501, appointment_id: 403, pet_id: 204, vet_id: 303, treatment_date: '2026-10-25', diagnosis: 'Nanogel Dermal Desiccation Grade II', procedure_notes: 'Applied cryogenic nanogel sealant layer and recalibrated temperature sensor.', prescriptions: 'BioDerm-7 Ointment (5mg BID x 7d)', cost: 380.00 },
-  { treatment_id: 502, appointment_id: null, pet_id: 201, vet_id: 301, treatment_date: '2026-09-18', diagnosis: 'Mechanical Tendon Strain in Right Paw', procedure_notes: 'Replaced micro-actuator spring and applied hydraulic damping lubricant.', prescriptions: 'Anti-Oxidant SynthLubricant Type-B', cost: 640.50 },
-  { treatment_id: 503, appointment_id: null, pet_id: 203, vet_id: 303, treatment_date: '2026-08-10', diagnosis: 'Feather Fiber Static Discharge Disorder', procedure_notes: 'Grounding diode array installed at dorsal quill cluster.', prescriptions: 'Static-Resist Shielding Spray', cost: 215.00 }
+  { treatment_id: 501, appointment_id: 403, pet_id: 203, vet_id: 303, treatment_date: '2026-10-25', diagnosis: 'Feather Fiber Static & Desiccation', procedure_notes: 'Applied cryogenic herbal-nanogel plumage moisturizer and grounding diode.', prescriptions: 'Himalaya Fur-Glow + NanoDerm Spray', cost: 1850.00 },
+  { treatment_id: 502, appointment_id: null, pet_id: 201, vet_id: 301, treatment_date: '2026-09-18', diagnosis: 'Tendon Strain & Hydraulic Paw Wear', procedure_notes: 'Replaced micro-actuator spring and ultrasonic laser therapy.', prescriptions: 'Synoquin Joint Care + SynthLubricant-IN', cost: 5400.00 },
+  { treatment_id: 503, appointment_id: null, pet_id: 204, vet_id: 302, treatment_date: '2026-08-10', diagnosis: 'Optical Sensor Dust Lag & Viral Rhinitis', procedure_notes: 'Flushed optical tear-duct sensor with sterile saline; ultrasonic nebulization.', prescriptions: 'Cifran Eye Drops + Enrofloxacin Syrup', cost: 3200.00 }
 ];
 
 export default function App() {
@@ -358,7 +358,7 @@ export default function App() {
         Pet_ID: t.pet_id,
         Vet_ID: t.vet_id,
         Diagnosis: t.diagnosis,
-        Cost: `$${t.cost.toFixed(2)}`,
+        Cost: `₹${t.cost.toLocaleString('en-IN', { minimumFractionDigits: 2 })}`,
         Treatment_Date: t.treatment_date
       }));
     } else {
@@ -401,7 +401,7 @@ export default function App() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AetherVet - Cyber Pet Clinic Database Management System</title>
+  <title>PetVet - Cyber Pet Clinic Database Management System</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -412,7 +412,7 @@ export default function App() {
       background-image: linear-gradient(to right, rgba(0,240,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,240,255,0.04) 1px, transparent 1px);
     }
     .cyber-glass {
-      background: rgba(8, 14, 29, 0.75);
+      background: rgba(8, 14, 29, 0.78);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(0, 240, 255, 0.18);
       box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.6), 0 0 15px -3px rgba(0, 240, 255, 0.05);
@@ -427,18 +427,13 @@ export default function App() {
       border-color: #00f0ff;
       box-shadow: 0 0 12px rgba(0, 240, 255, 0.25);
     }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: rgba(5, 8, 17, 0.85); }
-    ::-webkit-scrollbar-thumb { background: rgba(0, 240, 255, 0.3); border-radius: 3px; }
   </style>
 </head>
-<body class="cyber-grid h-screen flex flex-col overflow-hidden">
-  <!-- Interactive Standalone Cyber Database System -->
-  <div id="app" class="flex flex-col h-full"></div>
-  <script>
-    // Embedded Standalone Application Engine
-    console.log("AetherVet DBMS Initialized.");
-  </script>
+<body class="cyber-grid h-screen flex flex-col overflow-hidden text-slate-100">
+  <div class="p-6">
+    <h1 class="text-xl font-bold font-mono text-cyan-400">PETVET DBMS // INDIA REGION (IN-WEST)</h1>
+    <p class="text-xs text-slate-400 font-mono mt-1">Currency: INR (₹) · Host: 127.0.0.1:5432 · DB: petvet_prod_in</p>
+  </div>
 </body>
 </html>`;
   };
@@ -449,15 +444,17 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'aethervet_single_file_dbms.html';
+    a.download = 'petvet_single_file_dbms.html';
     a.click();
     URL.revokeObjectURL(url);
+    logSQL('-- EXPORTED STANDALONE SINGLE-FILE HTML APPLICATION FOR PETVET', { tag: '[HTML_EXPORT]' });
   };
 
   // Export SQL dump
   const handleExportSQLDump = () => {
     const dump = `-- ========================================================
--- CYBER PET CLINIC DATABASE SYSTEM DUMP
+-- PETVET CYBER PET CLINIC DATABASE SYSTEM DUMP
+-- Region: India (IN-WEST) / Currency: INR (₹)
 -- Engine: PostgreSQL 16.4 / ISO SQL-92
 -- Timestamp: ${new Date().toISOString()}
 -- ========================================================
@@ -517,11 +514,11 @@ CREATE TABLE IF NOT EXISTS TreatmentRecord (
     Diagnosis TEXT NOT NULL,
     Procedure_Notes TEXT,
     Prescriptions TEXT,
-    Cost NUMERIC(10,2) NOT NULL DEFAULT 0.00
+    Cost NUMERIC(10,2) NOT NULL DEFAULT 0.00 -- Currency in INR (₹)
 );
 
--- Seed Data Inserts
-${owners.map(o => `INSERT INTO Owner (Owner_ID, First_Name, Last_Last, Phone, Email, Address, City) VALUES (${o.owner_id}, '${o.first_name}', '${o.last_name}', '${o.phone}', '${o.email}', '${o.address}', '${o.city}');`).join('\n')}
+-- Seed Data Inserts (Indian Region Context)
+${owners.map(o => `INSERT INTO Owner (Owner_ID, First_Name, Last_Name, Phone, Email, Address, City) VALUES (${o.owner_id}, '${o.first_name}', '${o.last_name}', '${o.phone}', '${o.email}', '${o.address}', '${o.city}');`).join('\n')}
 
 ${pets.map(p => `INSERT INTO Pet (Pet_ID, Name, Species, Breed, Date_Of_Birth, Owner_ID, Microchip_No, Weight_KG, Status) VALUES (${p.pet_id}, '${p.name}', '${p.species}', '${p.breed}', '${p.date_of_birth}', ${p.owner_id}, '${p.microchip_no}', ${p.weight_kg}, '${p.status}');`).join('\n')}
 
@@ -536,11 +533,11 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `cyber_pet_clinic_schema_dump_${Date.now()}.sql`;
+    a.download = `petvet_schema_dump_${Date.now()}.sql`;
     a.click();
     URL.revokeObjectURL(url);
 
-    logSQL(`-- GENERATED & EXPORTED FULL RELATIONAL DDL SCHEMA DUMP (.SQL)\n-- Wrote 5 tables, foreign keys, indexes, and ${owners.length + pets.length + vets.length + appointments.length + treatments.length} row tuples.`, {
+    logSQL(`-- GENERATED & EXPORTED FULL RELATIONAL DDL SCHEMA DUMP FOR PETVET (.SQL)\n-- Wrote 5 tables and ${owners.length + pets.length + vets.length + appointments.length + treatments.length} row records in INR (₹).`, {
       latencyMs: 4.8,
       affectedRows: owners.length + pets.length + vets.length + appointments.length + treatments.length,
       tag: '[SQL_DUMP]'
@@ -843,10 +840,10 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold tracking-tight text-white text-base">AETHER<span className="text-cyan-400">VET</span></span>
-              <span className="text-[11px] font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/60">DB-MANAGEMENT</span>
+              <span className="font-bold tracking-tight text-white text-base">PET<span className="text-cyan-400">VET</span></span>
+              <span className="text-[11px] font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/60">DBMS_PROD_IN</span>
             </div>
-            <p className="text-[11px] text-slate-400 font-mono hidden md:block">RELATIONAL ENGINE · POSTGRESQL v16.4 COMPLIANT</p>
+            <p className="text-[11px] text-slate-400 font-mono hidden md:block">RELATIONAL ENGINE · POSTGRESQL v16.4 · INDIA REGION (IN-WEST)</p>
           </div>
         </div>
 
@@ -858,15 +855,15 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
           </div>
           <div className="flex items-center gap-2 text-slate-300">
             <span className="text-slate-500">DATABASE:</span>
-            <span className="text-emerald-400 font-medium">pet_clinic_prod</span>
+            <span className="text-emerald-400 font-medium">petvet_prod_in</span>
           </div>
           <div className="flex items-center gap-2 text-slate-300">
             <span className="text-slate-500">CONN POOL:</span>
             <span className="text-cyan-400">8/20 ACTIVE</span>
           </div>
           <div className="flex items-center gap-2 text-slate-300">
-            <span className="text-slate-500">REVENUE:</span>
-            <span className="text-emerald-400 font-semibold">${totalRevenue.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
+            <span className="text-slate-500">TOTAL BILLED:</span>
+            <span className="text-emerald-400 font-semibold">₹{totalRevenue.toLocaleString('en-IN', { minimumFractionDigits: 2 })}</span>
           </div>
         </div>
 
@@ -1733,9 +1730,9 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="text-right px-3 py-1.5 rounded-lg bg-slate-950 border border-emerald-500/30 text-xs font-mono">
-                    <span className="text-slate-400 text-[10px] block">TOTAL BILLED:</span>
+                    <span className="text-slate-400 text-[10px] block">TOTAL BILLED (INR):</span>
                     <span className="text-emerald-400 font-bold text-sm">
-                      ${totalRevenue.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                      ₹{totalRevenue.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                     </span>
                   </div>
 
@@ -1775,7 +1772,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                         <th className="py-2.5 px-4 font-semibold">Diagnosis</th>
                         <th className="py-2.5 px-4 font-semibold">Procedure Notes</th>
                         <th className="py-2.5 px-4 font-semibold">Prescriptions</th>
-                        <th className="py-2.5 px-4 font-semibold text-right text-emerald-400">Cost (USD)</th>
+                        <th className="py-2.5 px-4 font-semibold text-right text-emerald-400">Cost (INR - ₹)</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-cyan-500/10 font-mono">
@@ -1794,7 +1791,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                             <td className="py-2.5 px-4 text-slate-400 max-w-xs truncate">{tr.procedure_notes}</td>
                             <td className="py-2.5 px-4 text-cyan-300/80">{tr.prescriptions}</td>
                             <td className="py-2.5 px-4 text-right font-bold text-emerald-400">
-                              ${tr.cost.toFixed(2)}
+                              ₹{tr.cost.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                             </td>
                           </tr>
                         );
@@ -1840,7 +1837,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <div className="flex items-center gap-2">
                     <input
                       type="text"
-                      placeholder="Type owner name (e.g. Vance, Chen, Aria)..."
+                      placeholder="Type owner name (e.g. Sharma, Patel, Deshmukh)..."
                       value={reportOwnerQuery}
                       onChange={e => {
                         setReportOwnerQuery(e.target.value);
@@ -1852,10 +1849,10 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                       className="cyber-input text-xs px-3 py-1.5 rounded-lg w-64 placeholder:text-slate-500"
                     />
                     <button
-                      onClick={() => setReportOwnerQuery('Vance')}
+                      onClick={() => setReportOwnerQuery('Sharma')}
                       className="px-2.5 py-1.5 rounded text-xs font-mono bg-cyan-950 text-cyan-300 border border-cyan-800 cursor-pointer hover:bg-cyan-900"
                     >
-                      Preset: Vance
+                      Preset: Sharma
                     </button>
                   </div>
                 </div>
@@ -2021,19 +2018,19 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 </div>
 
                 <div className="cyber-glass rounded-xl p-4">
-                  <div className="text-[11px] font-mono text-emerald-400 font-bold">SQL REVENUE METRICS</div>
+                  <div className="text-[11px] font-mono text-emerald-400 font-bold">SQL REVENUE METRICS (INR)</div>
                   <div className="text-xs text-slate-400 mt-0.5">SELECT SUM(Cost), AVG(Cost) FROM TreatmentRecord</div>
                   <div className="mt-4 space-y-3 font-mono text-xs">
                     <div className="p-3 rounded bg-slate-950/70 border border-emerald-500/20">
                       <span className="text-[10px] text-slate-400 block">TOTAL ACCUMULATED BILLING:</span>
                       <span className="text-lg font-bold text-emerald-400">
-                        ${totalRevenue.toFixed(2)}
+                        ₹{totalRevenue.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                       </span>
                     </div>
                     <div className="p-3 rounded bg-slate-950/70 border border-cyan-500/20">
                       <span className="text-[10px] text-slate-400 block">AVERAGE TREATMENT PROCEDURE:</span>
                       <span className="text-lg font-bold text-cyan-400">
-                        ${(treatments.length > 0 ? totalRevenue / treatments.length : 0).toFixed(2)}
+                        ₹{(treatments.length > 0 ? totalRevenue / treatments.length : 0).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                       </span>
                     </div>
                   </div>
@@ -2542,7 +2539,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <input
                     name="first_name"
                     required
-                    placeholder="e.g. Katherine"
+                    placeholder="e.g. Rajesh"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2551,7 +2548,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <input
                     name="last_name"
                     required
-                    placeholder="e.g. Sterling"
+                    placeholder="e.g. Sharma"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2563,7 +2560,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <input
                     name="phone"
                     required
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+91 98201 44521"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2573,7 +2570,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                     type="email"
                     name="email"
                     required
-                    placeholder="katherine@domain.io"
+                    placeholder="rajesh.sharma@gmail.com"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2583,7 +2580,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <label className="text-slate-400 block mb-1">Residential Street Address</label>
                 <input
                   name="address"
-                  placeholder="e.g. 512 Cyber Plaza, Bay 9"
+                  placeholder="e.g. Flat 402, Sea Breeze Apts, Bandra West"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -2592,7 +2589,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <label className="text-slate-400 block mb-1">City / District</label>
                 <input
                   name="city"
-                  defaultValue="Neo-Veridia"
+                  defaultValue="Mumbai, Maharashtra"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -2744,7 +2741,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <input
                     name="name"
                     required
-                    placeholder="e.g. Apex"
+                    placeholder="e.g. Sheru"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2765,8 +2762,8 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <label className="text-slate-400 block mb-1">Breed / Cyber Model</label>
                   <input
                     name="breed"
-                    placeholder="e.g. Cyber-Husky"
-                    defaultValue="Cyber-Companion"
+                    placeholder="e.g. Desi Indie Hound"
+                    defaultValue="Desi Indie Hound (Cyber-Augmented)"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2874,7 +2871,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <input
                   name="name"
                   required
-                  placeholder="e.g. Dr. Silas Kor, DVM"
+                  placeholder="e.g. Dr. Arvind Swaminathan, BVSc & AH, MVSc"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -2884,7 +2881,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <input
                   name="specialization"
                   required
-                  placeholder="e.g. Robotic Prosthetics & Neuro-Surgical"
+                  placeholder="e.g. Cyber-Surgical & Orthopedic Reconstruction"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -2895,7 +2892,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <input
                     name="license_no"
                     required
-                    placeholder="VET-LIC-5501"
+                    placeholder="VCI-MH-2024-8421"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2903,7 +2900,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <label className="text-slate-400 block mb-1">Phone Contact</label>
                   <input
                     name="phone"
-                    placeholder="+1 (555) 789-0199"
+                    placeholder="+91 (022) 2640-0112"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -2913,7 +2910,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <div>
                   <label className="text-slate-400 block mb-1">Duty Shift</label>
                   <select name="shift" className="cyber-input w-full px-3 py-1.5 rounded">
-                    <option value="Morning 08:00 - 16:00">Morning 08:00 - 16:00</option>
+                    <option value="Morning 08:30 - 16:30">Morning 08:30 - 16:30</option>
                     <option value="Afternoon 14:00 - 22:00">Afternoon 14:00 - 22:00</option>
                     <option value="Night Surveillance 22:00 - 06:00">Night Surveillance 22:00 - 06:00</option>
                   </select>
@@ -2922,7 +2919,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <label className="text-slate-400 block mb-1">Clinical Bay / Room</label>
                   <input
                     name="room_no"
-                    defaultValue="Suite Alpha 4"
+                    defaultValue="OT-Alpha 1 (Bandra)"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
@@ -3022,7 +3019,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   name="reason"
                   rows={2}
                   required
-                  placeholder="Describe observed symptoms, scheduled vaccination, or calibration..."
+                  placeholder="e.g. Annual titanium joint calibration & monsoon skin check"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -3104,7 +3101,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <input
                   name="diagnosis"
                   required
-                  placeholder="e.g. Acute Optical Sensor Degeneration"
+                  placeholder="e.g. Tendon Strain & Hydraulic Paw Wear"
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -3114,7 +3111,7 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                 <textarea
                   name="procedure_notes"
                   rows={2}
-                  placeholder="Details of surgery, calibration, nanogel application, or fluids..."
+                  placeholder="Details of ultrasonic therapy, laser joint healing, herbal nanogel application..."
                   className="cyber-input w-full px-3 py-1.5 rounded"
                 />
               </div>
@@ -3124,19 +3121,19 @@ ${treatments.map(t => `INSERT INTO TreatmentRecord (Treatment_ID, Pet_ID, Vet_ID
                   <label className="text-slate-400 block mb-1">Prescriptions / Drugs</label>
                   <input
                     name="prescriptions"
-                    placeholder="e.g. Bio-AntiViral 25mg BID"
+                    placeholder="e.g. Himalaya Fur-Glow + NanoDerm Spray"
                     className="cyber-input w-full px-3 py-1.5 rounded"
                   />
                 </div>
                 <div>
-                  <label className="text-slate-400 block mb-1">Total Fee / Cost (USD) *</label>
+                  <label className="text-slate-400 block mb-1">Total Fee / Cost (INR - ₹) *</label>
                   <input
                     type="number"
                     step="0.01"
                     name="cost"
                     required
-                    placeholder="450.00"
-                    defaultValue="250.00"
+                    placeholder="2500.00"
+                    defaultValue="1850.00"
                     className="cyber-input w-full px-3 py-1.5 rounded text-emerald-400 font-bold"
                   />
                 </div>
